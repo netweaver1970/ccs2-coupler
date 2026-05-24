@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "evc") (type "KiCad") (uri "${KIPRJMOD}/lib/evc.kicad_sym") (options "") (descr "EV Coupler symbols"))
+)
