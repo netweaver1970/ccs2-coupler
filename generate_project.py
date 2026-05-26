@@ -46,6 +46,7 @@ def make_sym(name, ref, value, lcsc, fp, box, pins):
     x1,y1,x2,y2 = box
     lines = [
         f'(symbol "{name}"',
+        f'  (pin_numbers (hide yes))',
         f'  (pin_names (offset 1.016))',
         f'  (in_bom yes)',
         f'  (on_board yes)',

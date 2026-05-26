@@ -4,6 +4,7 @@
   (generator_version "10.0")
 
   (symbol "ESP32-S3-WROOM-1"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -186,6 +187,7 @@
   )
 
   (symbol "BQ25895RTWT"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -288,6 +290,7 @@
   )
 
   (symbol "HUSB238_002D"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -350,6 +353,7 @@
   )
 
   (symbol "LTC4413"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -400,6 +404,7 @@
   )
 
   (symbol "AMS1117-3.3"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -442,6 +447,7 @@
   )
 
   (symbol "ATM90E32AS"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -572,6 +578,7 @@
   )
 
   (symbol "SRD-05VDC-SL-C"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -618,6 +625,7 @@
   )
 
   (symbol "PC817C"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -660,6 +668,7 @@
   )
 
   (symbol "IRLZ44NPBF"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -698,6 +707,7 @@
   )
 
   (symbol "HLK-5M05"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -740,6 +750,7 @@
   )
 
   (symbol "Battery18650"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -774,6 +785,7 @@
   )
 
   (symbol "USBC-16P"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -836,6 +848,7 @@
   )
 
   (symbol "KF301-5P"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -882,6 +895,7 @@
   )
 
   (symbol "KF301-2P"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -916,6 +930,7 @@
   )
 
   (symbol "PinHeader_2x3"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -966,6 +981,7 @@
   )
 
   (symbol "BZX55C3V3"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1000,6 +1016,7 @@
   )
 
   (symbol "1N4007"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1034,6 +1051,7 @@
   )
 
   (symbol "R_100k"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1068,6 +1086,7 @@
   )
 
   (symbol "R_47k"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1102,6 +1121,7 @@
   )
 
   (symbol "R_470k"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1136,6 +1156,7 @@
   )
 
   (symbol "R_2k7"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1170,6 +1191,7 @@
   )
 
   (symbol "R_10k"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1204,6 +1226,7 @@
   )
 
   (symbol "R_33"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1238,6 +1261,7 @@
   )
 
   (symbol "C_100n"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
@@ -1272,6 +1296,7 @@
   )
 
   (symbol "C_10u_0805"
+    (pin_numbers (hide yes))
     (pin_names (offset 1.016))
     (in_bom yes)
     (on_board yes)
