@@ -4,12 +4,13 @@ Smart Type 2 AC EV Inline Coupler — KiCad 10 Project Generator
 Generates: lib/evc.kicad_sym, SmartEVCoupler.kicad_sch,
            SmartEVCoupler.kicad_pcb, SmartEVCoupler.kicad_pro, bom.csv
 """
-import uuid, json, os
+import uuid, json, os, hashlib
 
 BASE = "/home/user/ccs2-coupler"
 os.makedirs(f"{BASE}/lib/evc.pretty", exist_ok=True)
 
 def uid(): return str(uuid.uuid4())
+def duid(seed): return str(uuid.UUID(hashlib.md5(seed.encode()).hexdigest()))
 def f(v): return f"{float(v):.3f}"
 def fxy(x, y): return f"{f(x)} {f(y)}"
 G = 2.54  # KiCad grid
@@ -1028,7 +1029,7 @@ PCB_FPS += (fp_header("D1","BZX55C3V3","evc:BZX55C3V3",58,50)
 
 # ─── GND copper pour polygon (LV side only: x=47..100, y=0..80) ──────────────
 GND_ZONE = f'''\
-(zone (net {N["GND"]}) (net_name "GND") (layer "F.Cu") (uuid "{uid()}")
+(zone (net {N["GND"]}) (net_name "GND") (layer "F.Cu") (uuid "{duid('gnd-zone-fcu')}")
   (hatch edge 0.508)
   (connect_pads (clearance 0.5))
   (min_thickness 0.25)
@@ -1038,7 +1039,7 @@ GND_ZONE = f'''\
     (xy 47 0) (xy 100 0) (xy 100 80) (xy 47 80)
   ))
 )
-(zone (net {N["GND"]}) (net_name "GND") (layer "B.Cu") (uuid "{uid()}")
+(zone (net {N["GND"]}) (net_name "GND") (layer "B.Cu") (uuid "{duid('gnd-zone-bcu')}")
   (hatch edge 0.508)
   (connect_pads (clearance 0.5))
   (min_thickness 0.25)
@@ -1109,7 +1110,7 @@ PCB = f'''\
 {pcb_text("LV LOGIC",       65,3,"F.SilkS",1.2)}
 {pcb_text("4mm CREEP →",    41,40,"Cmts.User",0.8)}
   ; ── Keepout on mains side for LV copper ───────────────────────────────────
-  (zone (net 0) (net_name "") (layer "F.Cu") (uuid "{uid()}")
+  (zone (net 0) (net_name "") (layer "F.Cu") (uuid "{duid('keepout-mains-fcu')}")
     (hatch edge 0.5)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour not_allowed))
     (polygon (pts (xy 0 0) (xy 43 0) (xy 43 80) (xy 0 80)))

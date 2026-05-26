@@ -116,7 +116,7 @@
 )
 
   ; ── Keepout on mains side for LV copper ───────────────────────────────────
-  (zone (net 0) (net_name "") (layer "F.Cu") (uuid "fd03103f-ca3a-434b-9abf-9985bd32ba1b")
+  (zone (net 0) (net_name "") (layer "F.Cu") (uuid "a9171ba1-281d-3eae-70e7-eb91c8c318ee")
     (hatch edge 0.5)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour not_allowed))
     (polygon (pts (xy 0 0) (xy 43 0) (xy 43 80) (xy 0 80)))
@@ -552,7 +552,7 @@
 )
 
   ; ── GND copper pours (LV side only) ───────────────────────────────────────
-(zone (net 0) (net_name "GND") (layer "F.Cu") (uuid "16722f05-5405-4e5b-acef-ae045d6c0961")
+(zone (net 0) (net_name "GND") (layer "F.Cu") (uuid "8f14ba88-5805-a47d-385b-27a4fceca43a")
   (hatch edge 0.508)
   (connect_pads (clearance 0.5))
   (min_thickness 0.25)
@@ -562,7 +562,7 @@
     (xy 47 0) (xy 100 0) (xy 100 80) (xy 47 80)
   ))
 )
-(zone (net 0) (net_name "GND") (layer "B.Cu") (uuid "9ce2c85e-f31f-46b3-8b82-2aa513d07053")
+(zone (net 0) (net_name "GND") (layer "B.Cu") (uuid "1cc0dab3-3d44-4509-0773-39e09d06d499")
   (hatch edge 0.508)
   (connect_pads (clearance 0.5))
   (min_thickness 0.25)
